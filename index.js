@@ -75,6 +75,11 @@ app.get("/esewa", (req, res) => {
 });
 
 
+app.get("/", (req, res) => {
+    res.send("Welcome to Backend API!");
+});
+
+
 app.post("/initialize-esewa", async (req, res) => {
   try {
     const { items, totalPrice, userId } = req.body;
