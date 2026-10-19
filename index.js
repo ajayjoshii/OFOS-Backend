@@ -29,8 +29,8 @@ const app = express();
 app.use(bodyParser.json()); // Parses application/json
 // app.use(bodyParser.urlencoded({ extended: true }));
 
-const allowedOrigins = ["http://localhost:5173", "http://localhost:3000"];
-// const allowedOrigins = ["https://online-food-ordering-nepal.onrender.com"];
+// const allowedOrigins = ["http://localhost:5173", "http://localhost:3000"];
+const allowedOrigins = ["https://online-ordering-eight.vercel.app"];
 app.use(cors({
   origin: function (origin, callback) {
     if (!origin || allowedOrigins.includes(origin)) {
