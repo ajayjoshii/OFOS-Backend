@@ -1,8 +1,8 @@
 const bcrypt = require("bcrypt");
 const mongoose = require("mongoose");
-const Admin = require("./models/Admin"); 
+const Admin = require("./models/Admin");
 
-const MONGO_URI = "mongodb://127.0.0.1:27017/Online_Food_Order_Datas"; 
+const MONGO_URI = "mongodb+srv://cloud:cloud123@cluster0.mmaojop.mongodb.net/Online_Food_Order_Datas";
 
 async function createAdmin() {
   try {
