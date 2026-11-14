@@ -76,7 +76,7 @@ app.get("/esewa", (req, res) => {
 
 
 app.get("/", (req, res) => {
-    res.send("Welcome to Backend API!");
+    res.send("Welcome to a Backend API!");
 });
 
 

@@ -4,13 +4,11 @@ const Admin = require("./models/Admin");
 
 const MONGO_URI = "mongodb+srv://cloud:cloud123@cluster0.mmaojop.mongodb.net/Online_Food_Order_Datas"; 
 
-
-
-
 async function createAdmin() {
   try {
     await mongoose.connect(MONGO_URI);
     const password = await bcrypt.hash("ajaystha", 10);
+    console.log(password)
     await Admin.create({ name: "Admin", email: "ajaystha@gmail.com", password, role: "admin" });
     console.log("Admin created");
     await mongoose.disconnect();
